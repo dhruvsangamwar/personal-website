@@ -1,6 +1,6 @@
 "use client"
 import React, { useState } from "react";
-import { Sidebar, SidebarBody, SidebarLink } from "../components/sidebar";
+import { Sidebar, SidebarBody, SidebarLink } from "../../components/sidebar";
 import {
   IconArrowLeft,
   IconMail,
@@ -13,8 +13,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 
-import { HeroHighlight, Highlight } from "../components/hero-highlight";
-import { TypewriterEffectSmooth } from "../components/typewriter-effect";
+import { LinkPreview } from "../..//components/link-preview";
 
 
 export default function Home() {
@@ -113,53 +112,51 @@ export const LogoIcon = () => {
  
 // Dummy dashboard component with content
 const Dashboard = () => {
-  const words = [
-    {
-      text: "I",
-    },
-    {
-      text: "am",
-    },
-    {
-      text: "a",
-    },
-    {
-      text: "Software",
-    },
-    {
-      text: "Engineer.",
-      className: "text-blue-500 dark:text-blue-500",
-    },
-  ];
-
   return (
     <div className="flex flex-1">
       <div className="p-2 md:p-10 rounded-tl-2xl border border-neutral-200 dark:border-neutral-700 bg-white dark:bg-neutral-900 flex flex-col gap-2 flex-1 w-full h-full">
-        <HeroHighlight>
-          <motion.h1
-            initial={{
-              opacity: 0,
-              y: 20,
-            }}
-            animate={{
-              opacity: 1,
-              y: [20, -5, 0],
-            }}
-            transition={{
-              duration: 0.5,
-              ease: [0.4, 0.0, 0.2, 1],
-            }}
-            className="text-2xl px-4 md:text-4xl lg:text-5xl font-bold text-neutral-700 dark:text-white max-w-4xl leading-relaxed lg:leading-snug text-center mx-auto ">
-            Hello there! My name is <br></br>{""}
-            <Highlight className="text-black dark:text-white">
-              Dhruv Sangamwar.
-            </Highlight>
+      <h1 className="p-4 flex flex-row text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-br from-purple-500 to-pink-500 items-center align-middle justify-center">
+            About Me
+        </h1>
+        
+        <div className="flex justify-normal items-center h-full flex-col px-4 pt-4">
+        <p className="text-neutral-500 dark:text-neutral-400 text-xl md:text-3xl max-w-3xl mx-auto mb-10">
+          I am a recent graduate from&nbsp;
+          <LinkPreview url="https://www.ucdavis.edu" className="font-bold">
+            University of California - Davis
+          </LinkPreview>{""}
+          , where I studied{" "}
+          <LinkPreview url="https://cs.ucdavis.edu" className="font-bold">
+            Computer Science.
+          </LinkPreview>{" "}
+          
+        </p>
 
-              <TypewriterEffectSmooth words={words} />
+        <p className="text-neutral-500 dark:text-neutral-400 text-xl md:text-3xl max-w-3xl mx-auto">
+          My passion lies in the areas of Databases, Distributed Systems, Computer Networks, and NLP. {" "}
+          I also find great fulfillment in&nbsp;
+          <LinkPreview
+            url="https://dhruvsangamwar.notion.site/ECS-198F-Diving-deep-into-the-world-of-Algorithms-Competitive-programming-and-more-4faece565e2e4c25a517970354a66102"
+            className="font-bold bg-clip-text text-transparent bg-gradient-to-br from-purple-500 to-pink-500"
+          >
+          teaching
+          </LinkPreview>{" "}
+          and sharing high-quality learning resources.
+        </p>
 
+        <br></br>
 
-          </motion.h1>
-        </HeroHighlight>        
+        <p className="text-neutral-500 dark:text-neutral-400 text-xl md:text-3xl max-w-3xl mx-auto">
+          Currently, I am actively seeking entry-level software engineering positions where I can apply my skills, contribute to innovative projects, and continue to grow professionally in a dynamic environment.
+        </p>
+
+        <br></br>
+
+        <p className="text-neutral-500 dark:text-neutral-400 text-xl md:text-3xl max-w-3xl mx-auto">
+          When I am not at my computer, you can find me hiking, traveling, and bouldering.
+        </p>
+
+        </div>
       </div>
     </div>
   );

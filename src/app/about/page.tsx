@@ -1,6 +1,6 @@
 "use client"
 import React, { useState } from "react";
-import { Sidebar, SidebarBody, SidebarLink } from "../../components/sidebar";
+import { Sidebar, SidebarBody, SidebarLink } from "@/components/sidebar";
 import {
   IconArrowLeft,
   IconMail,
@@ -8,12 +8,15 @@ import {
   IconInfoCircle,
   IconTerminal2,
   IconBlockquote,
+  IconBriefcase2,
+  IconBrandLinkedin,
+  IconBrandGithub,
 } from "@tabler/icons-react";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 
-import { LinkPreview } from "../..//components/link-preview";
+import { LinkPreview } from "@/components/link-preview";
 
 
 export default function Home() {
@@ -48,8 +51,29 @@ export default function Home() {
       ),
     },
     {
+      label: "Resume",
+      href: "/Dhruv_Sangamwar.pdf",
+      icon: (
+        <IconBriefcase2 className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
+      ),
+    },
+    {
+      label: "Github",
+      href: "https://github.com/dhruvsangamwar",
+      icon: (
+        <IconBrandGithub className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
+      ),
+    },
+    {
+      label: "LinkedIn",
+      href: "https://www.linkedin.com/in/dsangamwar",
+      icon: (
+        <IconBrandLinkedin className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
+      ),
+    },
+    {
       label: "Contact Me",
-      href: "contact",
+      href: "mailto:sangamward@gmail.com",
       icon: (
         <IconMail className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
       ),

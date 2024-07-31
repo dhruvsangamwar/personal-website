@@ -1,6 +1,6 @@
 "use client"
 import React, { useEffect, useId, useRef, useState } from "react";
-import { Sidebar, SidebarBody, SidebarLink } from "../../components/sidebar";
+import { Sidebar, SidebarBody, SidebarLink } from "@/components/sidebar";
 import {
   IconArrowLeft,
   IconMail,
@@ -8,6 +8,9 @@ import {
   IconInfoCircle,
   IconTerminal2,
   IconBlockquote,
+  IconBriefcase2,
+  IconBrandLinkedin,
+  IconBrandGithub,
 } from "@tabler/icons-react";
 import Link from "next/link";
 import { AnimatePresence, motion } from "framer-motion";
@@ -50,8 +53,29 @@ export default function Home() {
         ),
     },
     {
+      label: "Resume",
+      href: "/Dhruv_Sangamwar.pdf",
+      icon: (
+        <IconBriefcase2 className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
+      ),
+    },
+    {
+      label: "Github",
+      href: "https://github.com/dhruvsangamwar",
+      icon: (
+        <IconBrandGithub className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
+      ),
+    },
+    {
+      label: "LinkedIn",
+      href: "https://www.linkedin.com/in/dsangamwar",
+      icon: (
+        <IconBrandLinkedin className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
+      ),
+    },
+    {
       label: "Contact Me",
-      href: "contact",
+      href: "mailto:sangamward@gmail.com",
       icon: (
         <IconMail className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
       ),
@@ -141,7 +165,7 @@ const Dashboard = () => {
     
     return (
       <div className="flex flex-1 overflow-scroll">
-        <div className="p-2 md:p-10 rounded-tl-2xl border border-neutral-200 dark:border-neutral-700 bg-white dark:bg-neutral-900 flex flex-col gap-2 flex-1 w-full h-full">
+        <div className="overflow-scroll p-2 md:p-10 rounded-tl-2xl border border-neutral-200 dark:border-neutral-700 bg-white dark:bg-neutral-900 flex flex-col gap-2 flex-1 w-full h-full">
         <h1 className="p-4 flex flex-row text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-br from-purple-500 to-pink-500 items-center align-middle justify-center">
             Work Experience
         </h1>

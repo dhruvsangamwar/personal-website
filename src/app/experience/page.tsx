@@ -45,13 +45,13 @@ export default function Home() {
         <IconTools className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
       ),
     },
-    {
-        label: "Blog",
-        href: "blog",
-        icon: (
-          <IconBlockquote className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
-        ),
-    },
+    // {
+    //     label: "Blog",
+    //     href: "blog",
+    //     icon: (
+    //       <IconBlockquote className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
+    //     ),
+    // },
     {
       label: "Resume",
       href: "/Dhruv_Sangamwar.pdf",
@@ -351,23 +351,9 @@ const Dashboard = () => {
       content: () => {
         return (
           <p>
-            Lana Del Rey, an iconic American singer-songwriter, is celebrated for
-            her melancholic and cinematic music style. Born Elizabeth Woolridge
-            Grant in New York City, she has captivated audiences worldwide with
-            her haunting voice and introspective lyrics. <br /> <br /> Her songs
-            often explore themes of tragic romance, glamour, and melancholia,
-            drawing inspiration from both contemporary and vintage pop culture.
-            With a career that has seen numerous critically acclaimed albums, Lana
-            Del Rey has established herself as a unique and influential figure in
-            the music industry, earning a dedicated fan base and numerous
-            accolades. <br /><br />
-
-            Her songsoften explore themes of tragic romance, glamour, and melancholia,
-            drawing inspiration from both contemporary and vintage pop culture.
-            With a career that has seen numerous critically acclaimed albums, Lana
-            Del Rey has established herself as a unique and influential figure in
-            the music industry, earning a dedicated fan base and numerous
-            accolades.
+          · Studying governance policies within open-source repositories and sustainability of open-source software model, under Dr. Seth Frey. <br></br>
+          · Time series analysis on commit history, and governance documents from a data set of over 700 open source repositories using python. <br></br>
+          · Developing applications that allow researchers to analyze institutional grammar through semantic role labeling and other NLP methods. <br></br>
           </p>
         );
       },
@@ -379,24 +365,11 @@ const Dashboard = () => {
       ctaText: "Aug 2023 - Dec 2023",
       content: () => {
         return (
-            <p>
-            Lana Del Rey, an iconic American singer-songwriter, is celebrated for
-            her melancholic and cinematic music style. Born Elizabeth Woolridge
-            Grant in New York City, she has captivated audiences worldwide with
-            her haunting voice and introspective lyrics. <br /> <br /> Her songs
-            often explore themes of tragic romance, glamour, and melancholia,
-            drawing inspiration from both contemporary and vintage pop culture.
-            With a career that has seen numerous critically acclaimed albums, Lana
-            Del Rey has established herself as a unique and influential figure in
-            the music industry, earning a dedicated fan base and numerous
-            accolades. <br /><br />
-
-            Her songsoften explore themes of tragic romance, glamour, and melancholia,
-            drawing inspiration from both contemporary and vintage pop culture.
-            With a career that has seen numerous critically acclaimed albums, Lana
-            Del Rey has established herself as a unique and influential figure in
-            the music industry, earning a dedicated fan base and numerous
-            accolades.
+          <p>
+            · Designed and taught ECS 198F - Diving deep into world algorithms: competitive programming and more, a exhaustive 3 unit course. <br></br>
+            · Curated lesson plans and lectured a class of 85 students. Facilitated one on one technical interview preparation with every student. <br></br>
+            · Developed programming assignments and automated test cases for student submissions using Gradescope API in Python & C++. <br></br>
+            · Taught topics such as Data Structures, Algorithm analysis, Dynamic programming, Randomized and approximation algorithms. <br></br>
           </p>
         );
       },
@@ -409,24 +382,11 @@ const Dashboard = () => {
       ctaText: "Jun 2022 - Jun 2023",
       content: () => {
         return (
-            <p>
-            Lana Del Rey, an iconic American singer-songwriter, is celebrated for
-            her melancholic and cinematic music style. Born Elizabeth Woolridge
-            Grant in New York City, she has captivated audiences worldwide with
-            her haunting voice and introspective lyrics. <br /> <br /> Her songs
-            often explore themes of tragic romance, glamour, and melancholia,
-            drawing inspiration from both contemporary and vintage pop culture.
-            With a career that has seen numerous critically acclaimed albums, Lana
-            Del Rey has established herself as a unique and influential figure in
-            the music industry, earning a dedicated fan base and numerous
-            accolades. <br /><br />
-
-            Her songsoften explore themes of tragic romance, glamour, and melancholia,
-            drawing inspiration from both contemporary and vintage pop culture.
-            With a career that has seen numerous critically acclaimed albums, Lana
-            Del Rey has established herself as a unique and influential figure in
-            the music industry, earning a dedicated fan base and numerous
-            accolades.
+          <p>
+              · Designed, developed and automated 30+ new firmware validation tests on Intel SLC/QLC NAND SSD technology, P41 Plus drive. <br></br>
+              · Modernized legacy test framework by migrating tests from Python 2.7 to Python 3 improving performance and security. <br></br>
+              · Validated firmware through Regression tests covering areas of telemetry, thermal, write and read speeds, and data corruption. <br></br>
+              · Gained proficiency in using RS-232 serial data (UART) reported by device to characterize firmware behavior to debug efficiently. <br></br>
           </p>
         );
       },
@@ -438,24 +398,12 @@ const Dashboard = () => {
       ctaText: "Mar 2021 - Dec 2021",
       content: () => {
         return (
-            <p>
-            Lana Del Rey, an iconic American singer-songwriter, is celebrated for
-            her melancholic and cinematic music style. Born Elizabeth Woolridge
-            Grant in New York City, she has captivated audiences worldwide with
-            her haunting voice and introspective lyrics. <br /> <br /> Her songs
-            often explore themes of tragic romance, glamour, and melancholia,
-            drawing inspiration from both contemporary and vintage pop culture.
-            With a career that has seen numerous critically acclaimed albums, Lana
-            Del Rey has established herself as a unique and influential figure in
-            the music industry, earning a dedicated fan base and numerous
-            accolades. <br /><br />
-
-            Her songsoften explore themes of tragic romance, glamour, and melancholia,
-            drawing inspiration from both contemporary and vintage pop culture.
-            With a career that has seen numerous critically acclaimed albums, Lana
-            Del Rey has established herself as a unique and influential figure in
-            the music industry, earning a dedicated fan base and numerous
-            accolades.
+          <p>
+            · A startup with over $50,000 in funding and 10 engineers aiming to bring budget friendly travel options with features such as rent
+              splitting. Holds 20+ listings in 2 countries, and completed UCLA Anderson Venture Accelerator. <br></br>
+            · Developed a database seeding script using JavaScript to interface with MongoDB, improving database initialization and load testing. <br></br>
+            · Implemented caching using Redis to improve geo-spatial indexing for property listings enhancing proximity based search performance. <br></br>
+            · Developed containerized micro-services using Docker and scaled using Kubernetes, deployed applications on AWS and Firebase. <br></br>
           </p>
         );
       },

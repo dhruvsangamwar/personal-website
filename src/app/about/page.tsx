@@ -137,7 +137,7 @@ const LogoIcon = () => {
 // Dummy dashboard component with content
 const Dashboard = () => {
   return (
-    <div className="flex flex-1 overflow-scroll">
+    <div className="flex flex-1 overflow-hidden">
       <div className=" overflow-scroll p-2 md:p-10 rounded-tl-2xl border border-neutral-200 dark:border-neutral-700 bg-white dark:bg-neutral-900 flex flex-col gap-2 flex-1 w-full h-full">
       <h1 className="p-4 flex flex-row text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-br from-purple-500 to-pink-500 items-center align-middle justify-center">
             About Me

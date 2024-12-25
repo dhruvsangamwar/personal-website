@@ -13,7 +13,8 @@ import Head from 'next/head'
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
   title: {
-    default: 'Dhruv Sangamwar\'s Portforlio Website'
+    default: 'Dhruv Sangamwar\'s Portforlio Website',
+    template: '%s | Next.js Portfolio',
   },
   description: 'This is my portfolio.',
   openGraph: {

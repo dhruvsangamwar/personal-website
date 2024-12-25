@@ -7,7 +7,7 @@ export default function Page() {
       
       <p className="mb-4">
         I am currently working as a software engineer at 
-        <span className="font-bold"> PNI Sensor </span>, 
+        <span className="font-bold"> PNI Sensor</span>, 
         where I develop software supporting alternative positioning, navigation, and timing sensors. 
         Recently, I have been working with Android (Kotlin), Rust, and C. My interests include databases, 
         distributed systems, computer networks, and natural language processing.
